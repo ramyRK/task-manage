@@ -5,7 +5,11 @@
     <h1>Task List</h1>
     <ul>
         {% for task in tasks %}
-            <li>{{ task }}</li>
+            <li>
+                {{ task }} 
+                <a href="{% url 'update_task' task.id %}">Edit</a>  <!-- Link to update -->
+                <a href="{% url 'delete_task' task.id %}">Delete</a>  <!-- Link to delete -->
+            </li>
         {% endfor %}
     </ul>
     <a href="{% url 'add_task' %}">Add Task</a>
