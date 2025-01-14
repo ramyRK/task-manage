@@ -1,0 +1,21 @@
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment
+tutorial-venv/
+
+# Ignore SQLite database (optional)
+db.sqlite3
+
+# Ignore static and media files
+/static/
+/media/
+
+# Ignore environment variables and logs
+.env
+*.log
+
+# Ignore IDE-specific files (optional)
+.vscode/
+.idea/
